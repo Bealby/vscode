@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/theatre-background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 4.625rem);
+    color: #555;
+    font-family: 'Lato';
+}
+
+
+/*---Header (Links)---*/
+
+main nav:after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  height: 10277px;
+  width: 11296px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+main section:after {
+  position: relative;
+}
+
+main ul {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  list-style: none;
+  z-index: 999;
+}
+
+main ul li {
+  display: inline-block;
+  width: 12%;
+  position: relative;
+}
+
+main ul li a {
+  font-family: "Rammetto One", cursive;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+main ul li a:hover {
+  color: rgb(128, 0, 0, 1);
+  text-decoration: none;
+} 
+
+/*---Navbar Links---*/
+
+.nav-home {
+  top: 8px;
+  transform: rotate(15deg);
+}
+
+.nav-about {
+  top: 54px;
+  transform: rotate(10deg);
+}
+
+.nav-cast {
+  top: 85px;
+  transform: rotate(8deg);
+}
+
+.nav-shows {
+  top: 85px;
+  transform: rotate(-8deg);
+}
+
+
+.nav-gallery {
+  top: 54px;
+  transform: rotate(-10deg);
+}
+
+.info {
+  top: 8px;
+  transform: rotate(-15deg);
+}
