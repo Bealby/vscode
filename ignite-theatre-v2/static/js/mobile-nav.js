@@ -6,3 +6,10 @@ function closeMenu(){
 function openMenu(){
   document.getElementById("navbar").style.height = "100%";
 }
+
+function closeMenuGallery (){
+  document.getElementById("navbar-gallery").style.height = "0%";
+}
+function openMenuGallery(){
+  document.getElementById("navbar-gallery").style.height = "100%";
+}
