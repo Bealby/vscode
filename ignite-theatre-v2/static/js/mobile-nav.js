@@ -9,6 +9,7 @@ function openMenu(){
 
 function closeMenuGallery (){
   document.getElementById("navbar-gallery").style.height = "0%";
+  document.getElementById("navbar").style.height = "0%";
 }
 function openMenuGallery(){
   document.getElementById("navbar-gallery").style.height = "100%";
