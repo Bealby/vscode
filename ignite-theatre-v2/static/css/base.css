@@ -132,7 +132,9 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+/*---MEDIA QUERIES---*/
 
+/*---Desktop Nav - reduce font size for better viewing on smaller devices---*/
 @media (max-width: 1300px) {
 .navbar-links{
   font-weight: 700 !important;
@@ -145,6 +147,7 @@ nav ul li a:hover {
 }
 }
 
+/*---Desktop Nav - reduce font size for dropdown nav for better viewing on ipad---*/
 @media (max-width: 970px) {
 .navbar-links{
   font-weight: 700 !important;
@@ -157,6 +160,7 @@ nav ul li a:hover {
 }
 }
 
+/*---Desktop Nav - reduce font size for better viewing on smaller devices---*/
 @media (max-width: 1300px) {
 .navbar-links-dropdpown{
   font-family: "Rammetto One", cursive !important;
@@ -168,6 +172,7 @@ nav ul li a:hover {
 }
 }
 
+/*---Desktop Nav - reduce font size for dropdown nav for better viewing on ipad---*/
 @media (max-width: 970px) {
 .navbar-links-dropdpown{
   font-family: "Rammetto One", cursive !important;
@@ -179,13 +184,14 @@ nav ul li a:hover {
 }
 }
 
-
+/*---Desktop Nav - reduce logo size for better viewing on smaller devices---*/
 @media (max-width: 1300px) {
 .header-logo img {
   height: 100px;
 }
 }
 
+/*---Desktop Nav - reduce logo size for better viewing on ipad---*/
 @media (max-width: 970px) {
 .header-logo img {
   height: 90px;
