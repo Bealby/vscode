@@ -46,82 +46,6 @@ nav ul li a:hover {
   text-decoration: none !important;
 }
 
-
-/*---Navbar
-
-nav ul {
-  position: relative;
-  top: 20px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  list-style: none;
-  z-index: 999;
-}
-
-nav ul li {
-  display: inline-block;
-  width: 12%;
-  position: relative;
-}
-
-ul li a {
-  font-family: "Rammetto One", cursive;
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: rgb(128, 0, 0, 1);
-  text-decoration: none;
-}
---*/
-
-/*---Navbar Links
-
-.nav-home {
-  top: 8px;
-  transform: rotate(15deg);
-}
-
-.nav-about {
-  top: 54px;
-  transform: rotate(10deg);
-}
-
-.nav-cast {
-  top: 85px;
-  transform: rotate(8deg);
-}
-
-.nav-shows {
-  top: 85px;
-  transform: rotate(-8deg);
-}
-
-
-.nav-gallery {
-  top: 54px;
-  transform: rotate(-10deg);
-}
-
-.info {
-  top: 8px;
-  transform: rotate(-15deg);
-}
-
----*/
-
-
 /*---Logo---*/
 
 .header-logo img {
@@ -207,3 +131,65 @@ nav ul li a:hover {
   z-index: 1;
   cursor: pointer;
 }
+
+
+@media (max-width: 1300px) {
+.navbar-links{
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding-top: 2.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+}
+
+@media (max-width: 970px) {
+.navbar-links{
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding-top: 2.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+}
+
+@media (max-width: 1300px) {
+.navbar-links-dropdpown{
+  font-family: "Rammetto One", cursive !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+}
+
+@media (max-width: 970px) {
+.navbar-links-dropdpown{
+  font-family: "Rammetto One", cursive !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+}
+
+
+@media (max-width: 1300px) {
+.header-logo img {
+  height: 100px;
+}
+}
+
+@media (max-width: 970px) {
+.header-logo img {
+  height: 90px;
+}
+}
+
+
