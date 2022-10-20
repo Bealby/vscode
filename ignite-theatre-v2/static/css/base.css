@@ -12,6 +12,43 @@ body {
 
 /*---Navbar---*/
 
+.navbar-bg{
+  background-color: rgb(0, 0, 0, 0.8) !important;
+}
+
+.navbar-links{
+  font-family: "Rammetto One", cursive !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding-top: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
+.navbar-links-dropdpown{
+  font-family: "Rammetto One", cursive !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.dropdown-menu-links{
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+nav ul li a:hover {
+  color: rgb(128, 0, 0, 1) !important;
+  text-decoration: none !important;
+}
+
+
+/*---Navbar
+
 nav ul {
   position: relative;
   top: 20px;
@@ -47,8 +84,9 @@ nav ul li a:hover {
   color: rgb(128, 0, 0, 1);
   text-decoration: none;
 }
+--*/
 
-/*---Navbar Links---*/
+/*---Navbar Links
 
 .nav-home {
   top: 8px;
@@ -81,24 +119,20 @@ nav ul li a:hover {
   transform: rotate(-15deg);
 }
 
+---*/
+
+
 /*---Logo---*/
 
-.header-logo {
-  top: 33px;
-  left: -25;
-  right: 0;
-  position: absolute;
-}
-
 .header-logo img {
-  height: 160px;
+  height: 110px;
 }
 
 .header-logo-sm img {
   height: 150px;
 }
 
-/*---Navbar Overlay---*/
+/*---Navbar Overlay for mobile---*/
 
 .menu-icon {
   color: rgb(255, 255, 255) !important;
