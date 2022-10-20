@@ -1,35 +1,18 @@
-html {
-    height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Pacifico&family=Rammetto+One&display=swap");
+
+html{
+  height: 100%;
 }
 
 body {
     background: url('/media/theatre-background.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 4.625rem);
-    color: #555;
-    font-family: 'Lato';
+    height: calc(100vh - 164px);
 }
 
+/*---Navbar---*/
 
-/*---Header (Links)---*/
-
-main nav:after {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(180deg);
-  height: 10277px;
-  width: 11296px;
-  border-radius: 50%;
-  background-color: rgb(0, 0, 0, 0.6);
-}
-
-main section:after {
-  position: relative;
-}
-
-main ul {
+nav ul {
   position: relative;
   top: 20px;
   margin: 0 auto;
@@ -39,13 +22,13 @@ main ul {
   z-index: 999;
 }
 
-main ul li {
+nav ul li {
   display: inline-block;
   width: 12%;
   position: relative;
 }
 
-main ul li a {
+ul li a {
   font-family: "Rammetto One", cursive;
   text-transform: uppercase;
   display: inline-block;
@@ -60,10 +43,10 @@ main ul li a {
   -o-transition: all 0.35s ease-in-out;
 }
 
-main ul li a:hover {
+nav ul li a:hover {
   color: rgb(128, 0, 0, 1);
   text-decoration: none;
-} 
+}
 
 /*---Navbar Links---*/
 
@@ -96,4 +79,97 @@ main ul li a:hover {
 .info {
   top: 8px;
   transform: rotate(-15deg);
+}
+
+/*---Logo---*/
+
+.header-logo {
+  top: 33px;
+  left: -25;
+  right: 0;
+  position: absolute;
+}
+
+.header-logo img {
+  height: 160px;
+}
+
+.header-logo-sm img {
+  height: 150px;
+}
+
+/*---Navbar Overlay---*/
+
+.menu-icon {
+  color: rgb(255, 255, 255) !important;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.menu-container {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-content a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Rammetto One", cursive;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255, 1);
+}
+
+.menu-content-intro {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  font-family: roboto, sans-serif;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+}
+
+.menu-content-intro-links a {
+  padding: 9px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-content a:hover {
+  background-color: rgb(128, 0, 0, 1);
+}
+
+.menu-content-intro-links a:hover {
+  background-color: rgb(128, 0, 0, 1);
+}
+
+.menu-container .closebtn {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  font-size: 50px;
+  color: rgb(255, 255, 255, 1);
+  z-index: 1;
+  cursor: pointer;
 }
