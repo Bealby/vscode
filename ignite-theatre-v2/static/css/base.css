@@ -35,6 +35,8 @@ body {
   font-size: 20px !important;
   color: #fff !important;
   text-decoration: none !important;
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
 }
 
 .dropdown-menu-links{
