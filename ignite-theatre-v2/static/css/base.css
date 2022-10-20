@@ -46,6 +46,7 @@ body {
 nav ul li a:hover {
   color: rgb(128, 0, 0, 1) !important;
   text-decoration: none !important;
+  background-color: rgb(0, 0, 0, 0) !important;
 }
 
 /*---Logo---*/
