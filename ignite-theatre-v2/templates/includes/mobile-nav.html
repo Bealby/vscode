@@ -14,24 +14,40 @@
 </div>
 <div class="menu-container" id="navbar">
     <span class="closebtn" onclick="closeMenu()">&times;</span>
-    <div class="menu-content" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+    <div class="menu-content">
         <a href="" class="text-uppercase">Home</a>
         <a href="" class="text-uppercase">About</a>
-        <span onclick="openMenuGallery()"><a class="text-uppercase">Gallery</a></span>
-        <a href="" class="text-uppercase">Archive</a>
+        <span onclick="openMenuGallery()"><a class="text-uppercase">Gallery&nbsp;<i
+                    class="fa-solid fa-chevron-right"></i></a></span>
+        <span onclick="openMenuArchive()"><a class="text-uppercase">Archive&nbsp;<i
+                    class="fa-solid fa-chevron-right"></i></a></span>
         <a href="" class="text-uppercase">Contact</a>
         <a href="" class="text-uppercase">Tickets</a>
     </div>
 </div>
 <div class="menu-container" id="navbar-gallery">
-    <span class="closebtn" onclick="closeMenuGallery()">&times;</span>
+    <span class="closebtn" onclick="closeAllMenu()">&times;</span>
     <div class="menu-content">
+        <span onclick="closeMenuGallery()"><a class="text-uppercase nav-mob-back"><i
+                    class="fa-solid fa-chevron-left"></i>&nbsp;back</a></span>
+        <p class="nav-mob-subheader mt-2 pb-0 mb-2">
+            <u>Gallery - Past Productions</u>
+        </p>
         <a chref="" class="text-uppercase">Gabriel</a>
         <a href="" class="text-uppercase">Wind and the Willows</a>
         <a href="" class="text-uppercase">The Memory of Water</a>
     </div>
 </div>
-
-<script>
-    AOS.init();
-</script>
+<div class="menu-container" id="navbar-archive">
+    <span class="closebtn" onclick="closeAllMenu()">&times;</span>
+    <div class="menu-content">
+        <span onclick="closeMenuArchive()"><a class="text-uppercase nav-mob-back"><i
+                    class="fa-solid fa-chevron-left"></i>&nbsp;back</a></span>
+        <p class="nav-mob-subheader mt-2 pb-0 mb-2">
+            <u>Cast - Past Productions</u>
+        </p>
+        <a chref="" class="text-uppercase">Gabriel</a>
+        <a href="" class="text-uppercase">Wind and the Willows</a>
+        <a href="" class="text-uppercase">The Memory of Water</a>
+    </div>
+</div>

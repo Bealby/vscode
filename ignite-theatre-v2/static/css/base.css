@@ -21,7 +21,7 @@ body {
   text-transform: uppercase !important;
   font-weight: 700 !important;
   font-size: 18px !important;
-  color: #fff !important;
+  color:rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-top: 2.5rem !important;
   padding-right: 2.5rem !important;
@@ -33,7 +33,7 @@ body {
   text-transform: uppercase !important;
   font-weight: 700 !important;
   font-size: 16px !important;
-  color: #fff !important;
+  color: rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-top: 0rem !important;
   padding-right: 2.5rem !important;
@@ -54,11 +54,25 @@ nav ul li a:hover {
 .nav-subheader{
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
-  color: #fff;
+  color: rgb(255, 255, 255, 1) !important;
   padding-top: 0rem;
   padding-left: 2.5rem;
   font-weight: 800;
   margin-bottom:0rem;
+}
+
+.nav-mob-back{
+  font-family: "Lato", sans-serif !important;
+  font-size: 1.4rem !important;
+  color: rgb(255, 255, 255, 1) !important;
+  font-weight: 700 !important;
+}
+
+.nav-mob-subheader{
+  font-family: "Lato", sans-serif !important;
+  font-size: 1.4rem !important;
+  color: rgb(255, 255, 255, 1) !important;
+  font-weight: 700 !important;
 }
 
 .dropdown-divider {
@@ -80,7 +94,7 @@ nav ul li a:hover {
 /*---Navbar Overlay for mobile---*/
 
 .menu-icon {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255, 1) !important;
   font-size: 40px;
   cursor: pointer;
 }
@@ -104,7 +118,7 @@ nav ul li a:hover {
 }
 
 .menu-content a {
-  padding: 16px;
+  padding: 8px;
   text-decoration: none;
   display: block;
   transition: 0.3s ease-in-out;
@@ -159,7 +173,7 @@ nav ul li a:hover {
 .navbar-links{
   font-weight: 700 !important;
   font-size: 16px !important;
-  color: #fff !important;
+  color: rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-top: 2.5rem !important;
   padding-right: 1.5rem !important;
@@ -172,7 +186,7 @@ nav ul li a:hover {
 .navbar-links{
   font-weight: 700 !important;
   font-size: 13px !important;
-  color: #fff !important;
+  color: rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-top: 2.5rem !important;
   padding-right: 1rem !important;
@@ -185,7 +199,7 @@ nav ul li a:hover {
 .navbar-links-dropdpown{
   font-weight: 700 !important;
   font-size: 15px !important;
-  color: #fff !important;
+  color: rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
@@ -214,7 +228,7 @@ nav ul li a:hover {
 .navbar-links-dropdpown{
   font-weight: 700 !important;
   font-size: 11px !important;
-  color: #fff !important;
+  color: rgb(255, 255, 255, 1) !important;
   text-decoration: none !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
