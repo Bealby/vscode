@@ -352,14 +352,14 @@ nav ul li a:hover {
 }
 }
 
-/*---Padding-top for ticket-source logo for better spacing below text on smaller devices"---*/
+/*---Padding-top for ticket-source logo for better spacing below text on smaller devices---*/
 @media (max-width: 472px) {
 .ticket-source{
   padding-top:20px;
 }
 }
 
-/*---Padding-top for ticket-source logo for better spacing below text on smaller devices"---*/
+/*---Padding-top for text box for better layout and spacing on desktop and mobile---*/
 @media (max-width: 767px) {
 .text-box-outside {
   margin-top:1rem;
