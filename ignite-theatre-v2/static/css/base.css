@@ -44,7 +44,7 @@ body {
 /*---Text-Boxes---*/
 
 .text-box-outside {
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.5);
   padding:1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -59,6 +59,8 @@ body {
   background: rgb(0, 0, 0, 1);
   margin-top:2rem;
 }
+
+/*---Margins/ Padding---*/
 
 #container-fluid-padding{
   padding-left: 0.75rem;
