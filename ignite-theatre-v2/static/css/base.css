@@ -65,6 +65,11 @@ body {
   width: 600px;
 }
 
+.supporters {
+  max-width: 70%;
+  max-height: auto;
+}
+
 /*---Icons/ Awesome---*/
 
 .fa-ticket-alt {
