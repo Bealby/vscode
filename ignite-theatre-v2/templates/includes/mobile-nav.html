@@ -17,8 +17,8 @@
 <div class="menu-container" id="navbar">
     <span class="closebtn" onclick="closeMenu()">&times;</span>
     <div class="menu-content">
-        <a href="" class="text-uppercase">Home</a>
-        <a href="" class="text-uppercase">About</a>
+        <a href="{% url 'home' %}" class="text-uppercase">Home</a>
+        <a href="{% url 'about' %}" class="text-uppercase">About</a>
         <span onclick="openMenuGallery()"><a class="text-uppercase">Gallery&nbsp;<i
                     class="fa-solid fa-chevron-right"></i></a></span>
         <span onclick="openMenuCast()"><a class="text-uppercase">Cast&nbsp;<i
