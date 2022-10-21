@@ -1,3 +1,5 @@
+{% load static %}
+
 <nav class="navbar navbar-expand-lg d-none d-md-block navbar-bg">
     <div class="container-fluid mx-auto">
         <ul class="nav mx-auto mb-2 mb-lg-0">
@@ -24,7 +26,7 @@
             </li>
             <li>
                 <a class="header-logo" href="index.html">
-                    <img src="media/logo/logo.png" alt="Ignite Theatre Logo" />
+                    <img src="{% static 'images/logo.png' %}" alt="Ignite Theatre Logo" />
                 </a>
             </li>
             <li class="nav-item dropdown">
