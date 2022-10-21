@@ -44,7 +44,7 @@ body {
 /*---Text-Boxes---*/
 
 .text-box-outside {
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0, 0.4);
   padding:1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -53,6 +53,11 @@ body {
 
 .text-box-inside {
   background: rgb(0, 0, 0, 1);
+}
+
+.text-box-inside-content {
+  background: rgb(0, 0, 0, 1);
+  margin-top:2rem;
 }
 
 /*---Navbar---*/
@@ -367,5 +372,16 @@ nav ul li a:hover {
 @media (max-width: 767px) {
 .text-box-outside {
   margin-top:1rem;
+}
+}
+
+/*---Padding/ Margin reduce for better layout and more space for smaller devices---*/
+@media (max-width: 767px) {
+.text-box-outside {
+  background: rgb(0, 0, 0, 0.4);
+  padding:1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top:2rem;
 }
 }
