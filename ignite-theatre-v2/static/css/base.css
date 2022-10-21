@@ -134,11 +134,15 @@ body {
 
 .text-box-inside {
   background: rgb(0, 0, 0, 1);
+  padding-left:1.5rem;
+  padding-left:1.5rem;
 }
 
 .text-box-inside-content {
   background: rgb(0, 0, 0, 1);
   margin-top:2rem;
+  padding-left:1.5rem;
+  padding-left:1.5rem;
 }
 
 /*---Margins/ Padding---*/
@@ -494,10 +498,19 @@ nav ul li a:hover {
 }
 
 
-/*---Reduce margin top for better spacing for contet box on smaller devices---*/
+/*---Reduce margin/ padding for better spacing for contet box on smaller devices---*/
 @media (max-width: 767px) {
 .text-box-inside-content {
-  background: rgb(0, 0, 0, 1);
   margin-top:1rem;
+  padding-left:1.2rem;
+  padding-left:1.2rem;
+}
+}
+
+/*---Reduce padding for better spacing for contet box on smaller devices---*/
+@media (max-width: 767px) {
+.text-box-inside {
+  padding-left:1.2rem;
+  padding-left:1.2rem;
 }
 }
