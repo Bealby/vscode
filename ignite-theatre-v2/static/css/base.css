@@ -65,7 +65,7 @@ body {
   width: 600px;
 }
 
-/*---Icons---*/
+/*---Icons/ Awesome---*/
 
 .fa-ticket-alt {
   color: rgb(128, 0, 0, 1);
@@ -85,6 +85,11 @@ body {
 .fa-arrow-right{
   color: rgb(128, 0, 0, 1);
   font-size: 1.2rem;
+}
+
+.fa-masks-theater{  
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
 }
 
 /*---Hover---*/
