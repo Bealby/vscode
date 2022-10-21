@@ -10,6 +10,35 @@ body {
     height: calc(100vh - 164px);
 }
 
+/*---Content---*/
+
+.page-header {
+  font-family: "Rammetto One", cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(181, 189, 191, 1);
+}
+
+.page-date-header {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(181, 189, 191, 1);
+}
+
+/*---Text-Boxes---*/
+
+.text-box-outside {
+  background: rgb(0, 0, 0, 0.6);
+  padding:1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.text-box-inside {
+  background: rgb(0, 0, 0, 1);
+}
+
 /*---Navbar---*/
 
 .navbar-bg{
