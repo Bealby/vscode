@@ -12,18 +12,29 @@ body {
 
 /*---Content---*/
 
-.page-header {
+.page-main-header {
   font-family: "Rammetto One", cursive;
   font-size: 1.8rem;
   text-align: center;
   color: rgb(181, 189, 191, 1);
 }
 
-.page-date-header {
+.page-main-sub-headers {
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
+  text-align: center;
   color: rgb(181, 189, 191, 1);
+}
+
+/*---Images---*/
+
+.ticket-source{
+  max-width: 100px;
+}
+
+.arts-council{
+  width: 300px;
 }
 
 /*---Text-Boxes---*/
@@ -330,4 +341,19 @@ nav ul li a:hover {
 }
 }
 
+/*---CONTENT MEDIA QUERIES---*/
 
+/*---Reduce font and pb for better viewing on smaller devices---*/
+@media (max-width: 500px) {
+.page-main-header {
+  font-size: 1.4rem;
+  padding-bottom:5px;
+}
+}
+
+/*---Padding-top for ticket-source logo for better spacing below text on smaller devices"---*/
+@media (max-width: 472px) {
+.ticket-source{
+  padding-top:20px;
+}
+}
