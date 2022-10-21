@@ -53,6 +53,10 @@ body {
   max-width: 100px;
 }
 
+.ticket-source2{
+  max-width: 100px;
+}
+
 .arts-council{
   width: 300px;
 }
@@ -478,5 +482,12 @@ nav ul li a:hover {
 @media (max-width: 767px) {
 .margin-top-poster{
   margin-top:1.3rem !important;
+}
+}
+
+/*---Margin-Top for ticket-source logo in content for better spacing on smaller devices---*/
+@media (max-width: 767px) {
+.ticket-source2{
+  margin-top: 12px !important;
 }
 }
