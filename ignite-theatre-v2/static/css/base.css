@@ -153,6 +153,10 @@ body {
   margin-bottom: 3rem !important;
 }
 
+.about-text-layout{
+  text-align: center !important;
+}
+
 /*---Navbar---*/
 
 .navbar-bg{
