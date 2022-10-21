@@ -92,6 +92,11 @@ body {
   font-size: 2rem;
 }
 
+.fa-handshake {
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
+}
+
 /*---Hover---*/
 
 .content-p-email a:hover {
