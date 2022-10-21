@@ -466,18 +466,13 @@ nav ul li a:hover {
 }
 }
 
-/*---Padding-top for text box for better layout and spacing on desktop and mobile---*/
-@media (max-width: 767px) {
-.text-box-outside {
-  margin-top:1rem;
-}
-}
-
 /*---Padding/ Margin reduce for better layout and more space for smaller devices---*/
 @media (max-width: 767px) {
 .text-box-outside {
   margin-left: 0rem;
   margin-right: 0rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   margin-top:0.5rem;
 }
 }
