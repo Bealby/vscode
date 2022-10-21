@@ -130,8 +130,9 @@ body {
   padding-right: 0.75rem;
 }
 
-.margin-top-poster{
+.margin-poster{
   margin-top:3rem !important;
+  margin-bottom: 3rem !important;
 }
 
 /*---Navbar---*/
@@ -485,8 +486,9 @@ nav ul li a:hover {
 
 /*---Margin-top for poster in index.html for better viewing and spacing on mobile---*/
 @media (max-width: 767px) {
-.margin-top-poster{
+.margin-poster{
   margin-top:1.3rem !important;
+  margin-bottom: 0rem !important;
 }
 }
 
