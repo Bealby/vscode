@@ -153,10 +153,6 @@ body {
   margin-bottom: 3rem !important;
 }
 
-.about-text-layout{
-  text-align: center !important;
-}
-
 /*---Navbar---*/
 
 .navbar-bg{
@@ -422,7 +418,22 @@ nav ul li a:hover {
 }
 }
 
-/*---LOGO MEDIA QUERIES---*/
+/*---LOGO/POSTER MEDIA QUERIES---*/
+
+/*---Margin-top for poster in index.html for better viewing and spacing on mobile---*/
+@media (max-width: 767px) {
+.margin-poster{
+  margin-top:1.3rem !important;
+  margin-bottom: 0rem !important;
+}
+}
+
+/*---Margin-Top for ticket-source logo in content for better spacing on smaller devices---*/
+@media (max-width: 767px) {
+.ticket-source2{
+  margin-top: 12px !important;
+}
+}
 
 /*---Desktop Nav - reduce logo size for better viewing on smaller devices---*/
 @media (max-width: 1300px) {
@@ -493,20 +504,5 @@ nav ul li a:hover {
 .text-box-inside-content {
   background: rgb(0, 0, 0, 1);
   margin-top:1rem;
-}
-}
-
-/*---Margin-top for poster in index.html for better viewing and spacing on mobile---*/
-@media (max-width: 767px) {
-.margin-poster{
-  margin-top:1.3rem !important;
-  margin-bottom: 0rem !important;
-}
-}
-
-/*---Margin-Top for ticket-source logo in content for better spacing on smaller devices---*/
-@media (max-width: 767px) {
-.ticket-source2{
-  margin-top: 12px !important;
 }
 }
