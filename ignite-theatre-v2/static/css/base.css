@@ -60,6 +60,11 @@ body {
   margin-top:2rem;
 }
 
+#container-fluid-padding{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 /*---Navbar---*/
 
 .navbar-bg{
@@ -383,5 +388,13 @@ nav ul li a:hover {
   margin-left: 0rem;
   margin-right: 0rem;
   margin-top:2rem;
+}
+}
+
+/*---Padding/ Margin reduce for better layout and more space for smaller devices---*/
+@media (max-width: 767px) {
+#container-fluid-padding{
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 }
