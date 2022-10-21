@@ -44,6 +44,7 @@ body {
   padding:1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-top:2rem;
 }
 
 .text-box-inside {
@@ -355,5 +356,12 @@ nav ul li a:hover {
 @media (max-width: 472px) {
 .ticket-source{
   padding-top:20px;
+}
+}
+
+/*---Padding-top for ticket-source logo for better spacing below text on smaller devices"---*/
+@media (max-width: 767px) {
+.text-box-outside {
+  margin-top:1rem;
 }
 }
