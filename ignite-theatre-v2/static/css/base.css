@@ -75,10 +75,20 @@ nav ul li a:hover {
   font-weight: 700 !important;
 }
 
-.dropdown-divider {
-    border: 2px solid  rgb(128, 0, 0, 1);
-    margin-left: 2.3rem;
-    margin-right: 9rem;
+.dropdown-divider-cast {
+  border: 2px solid  rgb(128, 0, 0, 1);
+  margin-left: 2.5rem;
+  margin-right: 6.2rem;
+  margin-top:0rem;
+  margin-bottom:1rem;
+}
+
+.dropdown-divider-gallery {
+  border: 2px solid  rgb(128, 0, 0, 1);
+  margin-left: 2.5rem;
+  margin-right: 4.8rem;
+  margin-top:0rem;
+  margin-bottom:1rem;
 }
 
 /*---Logo---*/
@@ -217,9 +227,17 @@ nav ul li a:hover {
 
 /*---Change M/P for dropdown divider for better viewing on smaller devices ---*/
 @media (max-width: 1300px) {
-.dropdown-divider {
+.dropdown-divider-cast {
     margin-left: 1.5rem;
-    margin-right: 7.2rem;
+    margin-right: 5.3rem;
+}
+}
+
+/*---Change M/P for dropdown divider for better viewing on smaller devices ---*/
+@media (max-width: 1300px) {
+.dropdown-divider-gallery {
+    margin-left: 1.5rem;
+    margin-right: 4rem;
 }
 }
 
@@ -246,9 +264,17 @@ nav ul li a:hover {
 
 /*---Change M/P for dropdown divider for better viewing on IPAD ---*/
 @media (max-width: 970px) {
-.dropdown-divider {
+.dropdown-divider-cast {
     margin-left: 1rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
+}
+}
+
+/*---Change M/P for dropdown divider for better viewing on IPAD ---*/
+@media (max-width: 970px) {
+.dropdown-divider-gallery {
+    margin-left: 1rem;
+    margin-right: 0.9rem;
 }
 }
 
