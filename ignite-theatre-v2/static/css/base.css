@@ -452,3 +452,11 @@ nav ul li a:hover {
   padding-right: 0rem;
 }
 }
+
+
+/*---Reduce font font for content header for better viewing on smaller devices---*/
+@media (max-width: 550px) {
+.content-h {
+  font-size: 1.1rem;
+}
+}
