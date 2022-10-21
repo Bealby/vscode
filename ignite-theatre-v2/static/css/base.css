@@ -121,6 +121,10 @@ body {
   padding-right: 0.75rem;
 }
 
+.margin-top-poster{
+  margin-top:3rem !important;
+}
+
 /*---Navbar---*/
 
 .navbar-bg{
@@ -455,7 +459,7 @@ nav ul li a:hover {
 
 
 /*---Reduce font font for content header for better viewing on smaller devices---*/
-@media (max-width: 550px) {
+@media (max-width: 767px) {
 .content-h {
   font-size: 1.1rem;
 }
@@ -463,9 +467,16 @@ nav ul li a:hover {
 
 
 /*---Reduce margin top for better spacing for contet box on smaller devices---*/
-@media (max-width: 550px) {
+@media (max-width: 767px) {
 .text-box-inside-content {
   background: rgb(0, 0, 0, 1);
   margin-top:1rem;
+}
+}
+
+/*---Margin-top for poster in index.html for better viewing and spacing on mobile---*/
+@media (max-width: 767px) {
+.margin-top-poster{
+  margin-top:1.3rem !important;
 }
 }
