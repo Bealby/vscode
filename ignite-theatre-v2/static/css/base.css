@@ -460,3 +460,12 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 }
+
+
+/*---Reduce margin top for better spacing for contet box on smaller devices---*/
+@media (max-width: 550px) {
+.text-box-inside-content {
+  background: rgb(0, 0, 0, 1);
+  margin-top:1rem;
+}
+}
