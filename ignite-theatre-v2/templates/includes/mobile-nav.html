@@ -17,6 +17,9 @@
 <div class="menu-container" id="navbar">
     <span class="closebtn" onclick="closeMenu()">&times;</span>
     <div class="menu-content">
+        <div class="header-logo mb-2">
+            <img src="{% static 'images/logo/logo.png' %}" alt="Ignite Theatre Logo" />
+        </div>
         <a href="{% url 'home' %}" class="text-uppercase">Home</a>
         <a href="{% url 'about' %}" class="text-uppercase">About</a>
         <span onclick="openMenuGallery()"><a class="text-uppercase">Gallery&nbsp;<i
@@ -30,6 +33,9 @@
 <div class="menu-container" id="navbar-gallery">
     <span class="closebtn" onclick="closeAllMenu()">&times;</span>
     <div class="menu-content">
+        <div class="header-logo mb-2">
+            <img src="{% static 'images/logo/logo.png' %}" alt="Ignite Theatre Logo" />
+        </div>
         <span onclick="closeMenuGallery()"><a class="text-uppercase nav-mob-back"><i
                     class="fa-solid fa-chevron-left"></i>&nbsp;back</a></span>
         <p class="nav-mob-subheader mt-2 pb-0 mb-2">
@@ -43,6 +49,9 @@
 <div class="menu-container" id="navbar-cast">
     <span class="closebtn" onclick="closeAllMenu()">&times;</span>
     <div class="menu-content">
+        <div class="header-logo mb-2">
+            <img src="{% static 'images/logo/logo.png' %}" alt="Ignite Theatre Logo" />
+        </div>
         <span onclick="closeMenuCast()"><a class="text-uppercase nav-mob-back"><i
                     class="fa-solid fa-chevron-left"></i>&nbsp;back</a></span>
         <p class="nav-mob-subheader mt-2 pb-0 mb-2">
