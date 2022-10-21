@@ -70,6 +70,14 @@ body {
   max-height: auto;
 }
 
+.header-logo img {
+  height: 110px;
+}
+
+.header-logo-sm img {
+  height: 150px;
+}
+
 /*---Icons/ Awesome---*/
 
 .fa-ticket-alt {
@@ -224,16 +232,6 @@ nav ul li a:hover {
   margin-right: 4.8rem;
   margin-top:0rem;
   margin-bottom:1rem;
-}
-
-/*---Logo---*/
-
-.header-logo img {
-  height: 110px;
-}
-
-.header-logo-sm img {
-  height: 150px;
 }
 
 /*---Navbar Overlay for mobile---*/
