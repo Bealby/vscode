@@ -1,15 +1,7 @@
 from django.contrib import admin
-from .models import Image
 from .models import Show
+from .models import Gallery
 
-
-class ImageAdmin(admin.ModelAdmin):
-    list_display = (
-        'show',
-        'name',
-        'description',
-        'picture',
-    )
 
 class ShowAdmin(admin.ModelAdmin):
     list_display = (
@@ -17,6 +9,14 @@ class ShowAdmin(admin.ModelAdmin):
         'name',
     )
 
+class GalleryAdmin(admin.ModelAdmin):
+    list_display = (
+        'show',
+        'name',
+        'description',
+        'image',
+    )
 
-admin.site.register(Image, ImageAdmin)
+
 admin.site.register(Show, ShowAdmin)
+admin.site.register(Gallery, GalleryAdmin)

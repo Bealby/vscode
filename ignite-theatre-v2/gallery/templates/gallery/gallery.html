@@ -1,14 +1,14 @@
-{% extends "base.html" %}
+'''{% extends "base.html" %}
 {% load static %}
 
 {% block content %}
 
 <section class="container-fluid" id="container-fluid-padding">
     <div class="row text-box-outside">
-        {% for image in gallery %}
+        {% for gallery in galleries %}
         <div class="col-md-6 col-lg-4 col-md-6 col-lg-4 p-5">
-            {% if image.picture %}
-            <img src="{{ image.picture.url }}" class="img-fluid" alt="Gabriel - Live Performance" />
+            {% if galery.image %}
+            <img src="{{ gallery.image.url }}" class="img-fluid" alt="Gabriel - Live Performance" />
             {% endif %}
         </div>
         {% endfor %}
