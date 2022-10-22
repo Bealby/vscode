@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Image
 
 
-def all_gallery(request):
+def all_images(request):
     '''A view to show all images'''
     '''context = to allow things to be sent to template'''
     

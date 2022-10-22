@@ -5,13 +5,13 @@
 
 <section class="container-fluid" id="container-fluid-padding">
     <div class="row text-box-outside">
-
-        <!---Content 1--->
-        <div class="text-box-inside">
-            <div class="col-12 col-md-8 offset-md-2">
-                {{ images }}
-            </div>
+        {% for image in images %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            {% if image.picture %}
+            <img src="{{ image.picture.url }}" class="img-fluid" alt="Gabriel - Live Performance" />
+            {% endif %}
         </div>
+        {% endfor %}
     </div>
 
 </section>
