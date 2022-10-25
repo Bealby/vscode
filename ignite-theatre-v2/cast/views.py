@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from .models import Show
-from .models import Actor
+from .models import Cast
+from .models import Crew
 
 
 def all_actors(request):
     '''A view to show all images'''
     '''context = to allow things to be sent to template'''
     
-    actors = Actor.objects.all()
+    casts = Cast.objects.all()
+    crews = Crew.objects.all()
     '''Filter actors by show'''
     shows = None
 
@@ -18,12 +20,14 @@ def all_actors(request):
             shows = request.GET['show'].split(',')
             '''Use the list to filter gallery only related to the show '''
             '''Name in Show.model '''
-            actors = actors.filter(show__name__in=shows)
+            casts = casts.filter(show__name__in=shows)
+            crews = crews.filter(show__name__in=shows)
             '''Display to user which show they have currently selected'''
             shows = Show.objects.filter(name__in=shows)
 
     context = {
-        'actors': actors,
+        'cast': casts,
+        'crews': crews,
         'current_shows': shows,
     }
 
