@@ -17,7 +17,7 @@ def all_galleries(request):
             '''If show exists split into a list at the commas'''
             shows = request.GET['show'].split(',')
             '''Use the list to filter gallery only related to the show '''
-            galleries = galleries.filter(name__in=shows)
+            galleries = galleries.filter(show__name__in=shows)
             '''Display to user which show they have currently selected'''
             shows = Show.objects.filter(name__in=shows)
 
