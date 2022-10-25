@@ -115,6 +115,11 @@ body {
   font-size: 2rem;
 }
 
+.fa-circle {
+  color: rgb(128, 0, 0, 1);
+  font-size: 0.7rem;
+}
+
 /*---Hover---*/
 
 .content-p-email a:hover {
