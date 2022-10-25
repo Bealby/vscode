@@ -4,17 +4,29 @@
 {% block content %}
 
 <section class="container-fluid" id="container-fluid-padding">
+    <div class="row text-box-outside">
 
-    <!---Header--->
-    <div class="text-box-inside">
-        {% for c in current_shows %}
-        <div class="col-12">
-            <p class="page-main-header text-uppercase mt-4 mb-0">
-                {{ c.friendly_name }}
-            </p>
+        <!---Header--->
+        <div class="text-box-inside">
+            {% for c in current_shows %}
+            <div class="col-12">
+                <p class="page-main-header text-uppercase mt-4 mb-4">
+                    {{ c.friendly_name }}
+                </p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+
+        <!---Cast--->
+        <div class="text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
+            <div class="col-12">
+                <p class="content-h mb-5 text-uppercase" id="header-align"><i class="fas fa-users"></i>&emsp;Cast
+                </p>
+            </div>
+        </div>
+
     </div>
+
 
 </section>
 
