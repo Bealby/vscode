@@ -120,6 +120,11 @@ body {
   font-size: 0.7rem;
 }
 
+.fa-video {
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
+}
+
 /*---Hover---*/
 
 .content-p-email a:hover {
