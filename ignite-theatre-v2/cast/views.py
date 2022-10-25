@@ -22,6 +22,8 @@ def all_casts(request):
             '''Use the list to filter gallery only related to the show '''
             '''Name in Show.model '''
             casts = casts.filter(show__name__in=shows)
+            crews = crews.filter(show__name__in=shows)
+            actors = actors.filter(show__name__in=shows)
             '''Display to user which show they have currently selected'''
             shows = Show.objects.filter(name__in=shows)
 
