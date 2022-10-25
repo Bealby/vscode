@@ -20,6 +20,7 @@ class Gallery(models.Model):
     class Meta:
         verbose_name_plural = 'Galleries'
     '''null=True, blank=True are optional fields'''
+    
     show = models.ForeignKey('show', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField(null=True, blank=True)
