@@ -17,7 +17,6 @@ class ActorAdmin(admin.ModelAdmin):
         'name',
         'image',
         'description',
-        'role',
         'website',
     )
 
