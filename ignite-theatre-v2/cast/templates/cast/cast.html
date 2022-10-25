@@ -70,13 +70,21 @@
                     {% for actor in actors %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card" style="width: 18rem;">
+                            {% if actor.image %}
                             <img class="card-img-top img-fluid" src="{{ actor.image.url }}" alt="Card image cap">
+                            {% endif %}
                             <div class="card-body">
+                                {% if actor.name %}
                                 <h5 class="card-title">{{ actor.name }}</h5>
+                                {% endif %}
+                                {% if actor.description %}
                                 <p class="card-text">{{ actor.description }}</p>
+                                {% endif %}
                             </div>
                             <div class="card-body">
+                                {% if actor.website %}
                                 <a href="#" class="card-link">{{ actor.website }}</a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
