@@ -20,7 +20,7 @@
         <!---Cast--->
         <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
             <div class="col-12">
-                <p class="content-h mb-5 text-uppercase" id="header-align"><i class="fas fa-users"></i>&emsp;Cast
+                <p class="content-h mb-5 text-uppercase"><i class="fas fa-users"></i>&emsp;Cast
                 </p>
                 <div class="row">
                     {% for cast in casts %}
@@ -42,7 +42,7 @@
         <!---Crew--->
         <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
             <div class="col-12">
-                <p class="content-h mb-5 text-uppercase" id="header-align"><i class="fas fa-video"></i>&emsp;Crew
+                <p class="content-h mb-5 text-uppercase"><i class="fas fa-video"></i>&emsp;Crew
                 </p>
                 <div class="row">
                     {% for crew in crews %}
@@ -55,6 +55,30 @@
                         {% if crew.name %}
                         <p class="content-p">&emsp;-&emsp;<i>{{ crew.name }}</i></p>
                         {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!---Profile--->
+        <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
+            <div class="col-12">
+                <p class="content-h mb-5 text-uppercase"><i class="fas fa-video"></i>&emsp;Profile
+                </p>
+                <div class="row">
+                    {% for actor in actors %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="{{ actor.image.url }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ actor.name }}</h5>
+                                <p class="card-text">{{ actor.description }}</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">{{ actor.website }}</a>
+                            </div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>

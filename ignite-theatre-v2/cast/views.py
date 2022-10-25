@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Show
 from .models import Cast
 from .models import Crew
+from .models import Actor
 
 
 def all_casts(request):
@@ -9,6 +10,7 @@ def all_casts(request):
     
     casts = Cast.objects.all()
     crews = Crew.objects.all()
+    actors = Actor.objects.all()
     '''Filter casts by show'''
     shows = None
 
@@ -26,6 +28,7 @@ def all_casts(request):
     context = {
         'casts': casts,
         'crews': crews,
+        'actors': actors,
         'current_shows': shows,
     }
 
