@@ -17,7 +17,7 @@ class ActorAdmin(admin.ModelAdmin):
         'image',
         'description',
         'role',
-        'wensite',
+        'website',
     )
 
 class CrewAdmin(admin.ModelAdmin):
@@ -30,3 +30,4 @@ class CrewAdmin(admin.ModelAdmin):
 
 admin.site.register(Show, ShowAdmin)
 admin.site.register(Actor, ActorAdmin)
+admin.site.register(Crew, CrewAdmin)
