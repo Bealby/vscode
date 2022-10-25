@@ -10,7 +10,7 @@
                 <a class="nav-link navbar-links active" aria-current="page" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link navbar-links dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <a class="nav-link navbar-links dropdown-toggle" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Gallery
                 </a>
@@ -42,14 +42,19 @@
                     <li>
                         <div class="dropdown-divider-cast"></div>
                     </li>
-                    <li><a class="dropdown-item navbar-links-dropdpown mb-3" href="#">A Grandma's Grimm</a></li>
+                    <li><a class="dropdown-item navbar-links-dropdpown mb-3"
+                            href="{% url 'actors' %}?show=grimms_fairy_tales">Grimm's Fairy Tales</a></li>
                     <p class="nav-subheader">Past Productions</p>
                     <li>
                         <div class="dropdown-divider-cast"></div>
                     </li>
-                    <li><a class="dropdown-item navbar-links-dropdpown" href="">Gabriel</a></li>
-                    <li><a class="dropdown-item navbar-links-dropdpown" href="">Wind and the Willows</a></li>
-                    <li><a class="dropdown-item navbar-links-dropdpown" href="#">The Memory of Water</a></li>
+                    <li><a class="dropdown-item navbar-links-dropdpown"
+                            href="{% url 'actors' %}?show=gabriel">Gabriel</a></li>
+                    <li><a class="dropdown-item navbar-links-dropdpown"
+                            href="{% url 'actors' %}?show=wind_and_the_willows">Wind and
+                            the Willows</a></li>
+                    <li><a class="dropdown-item navbar-links-dropdpown"
+                            href="{% url 'actors' %}?show=the_memory_of_water">The Memory of Water</a></li>
                 </ul>
             </li>
             <li class="nav-item">
