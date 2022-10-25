@@ -92,7 +92,7 @@ body {
   height: 150px;
 }
 
-/*---Icons/ Awesome---*/
+/*---Overflow---*/
 
 #overflowTest {
   overflow-y: auto;
@@ -206,6 +206,12 @@ body {
 .margin-poster{
   margin-top:3rem !important;
   margin-bottom: 3rem !important;
+}
+
+.gallery-border{
+  border: 1px solid rgb(0, 0, 0, 1) !important;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
 }
 
 /*---Navbar---*/
@@ -566,7 +572,7 @@ nav ul li a:hover {
 }
 }
 
-/*---Reduce padding for better spacing for contet box on smaller devices---*/
+/*---Reduce width of card for better viewing on smaller devices---*/
 @media (max-width: 1199px) {
 .card {   
   width:18rem !important;
