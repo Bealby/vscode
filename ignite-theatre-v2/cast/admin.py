@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Show
 from .models import Actor
 from .models import Crew
+from .models import Cast
 
 
 class ShowAdmin(admin.ModelAdmin):
@@ -27,7 +28,15 @@ class CrewAdmin(admin.ModelAdmin):
         'role',
     )
 
+class CastAdmin(admin.ModelAdmin):
+    list_display = (
+        'show',
+        'name',
+        'role',
+    )
+
 
 admin.site.register(Show, ShowAdmin)
 admin.site.register(Actor, ActorAdmin)
 admin.site.register(Crew, CrewAdmin)
+admin.site.register(Cast, CastAdmin)

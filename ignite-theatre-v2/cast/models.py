@@ -40,3 +40,13 @@ class Crew(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Cast(models.Model):
+
+    show = models.ForeignKey('show', null=True, blank=True, on_delete=models.SET_NULL)
+    name = models.CharField(max_length=254)
+    role = models.CharField(max_length=254)
+
+    def __str__(self):
+        return self.name
