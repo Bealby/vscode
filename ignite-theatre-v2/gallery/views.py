@@ -8,12 +8,17 @@ def all_galleries(request):
     '''context = to allow things to be sent to template'''
     
     galleries = Gallery.objects.all()
-    show = None
+    '''Filter gallery by show'''
+    shows = None
 
+    '''Request if show exists'''
     if request.GET:
         if 'show' in request.GET:
+            '''If show exists split into a list at the commas'''
             shows = request.GET['show'].split(',')
+            '''Use the list to filter gallery only related to the show '''
             galleries = galleries.filter(name__in=shows)
+            '''Display to user which show they have currently selected'''
             shows = Show.objects.filter(name__in=shows)
 
     context = {
