@@ -18,7 +18,10 @@ class ActorAdmin(admin.ModelAdmin):
         'image',
         'description',
         'website',
+        'position',
     )
+
+    ordering = ('position',)
 
 class CrewAdmin(admin.ModelAdmin):
     list_display = (
