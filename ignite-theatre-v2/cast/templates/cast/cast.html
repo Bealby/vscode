@@ -18,7 +18,7 @@
         </div>
 
         <!---Cast--->
-        <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
+        <div class="text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
             <div class="col-12">
                 <p class="content-h mb-5 text-uppercase"><i class="fas fa-users"></i>&emsp;Cast
                 </p>
@@ -40,7 +40,7 @@
         </div>
 
         <!---Crew--->
-        <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
+        <div class="text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
             <div class="col-12">
                 <p class="content-h mb-5 text-uppercase"><i class="fas fa-video"></i>&emsp;Crew
                 </p>
@@ -62,28 +62,29 @@
         </div>
 
         <!---Profile--->
-        <div class="row text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
+        <div class="text-box-inside pl-4 pt-4 pr-4 pb-0 mt-4 mb-4">
             <div class="col-12">
                 <p class="content-h mb-5 text-uppercase"><i class="fas fa-video"></i>&emsp;Profile
                 </p>
                 <div class="row">
                     {% for actor in actors %}
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card text-center mx-auto" style="width: 18rem;">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="card text-center mx-auto" style="width: 16rem;">
                             {% if actor.image %}
                             <img class="card-img-top img-fluid" src="{{ actor.image.url }}" alt="Card image cap">
                             {% endif %}
                             <div class="card-body">
                                 {% if actor.name %}
-                                <h5 class="card-title">{{ actor.name }}</h5>
+                                <P class="card-title content-h">{{ actor.name }}</P>
                                 {% endif %}
                                 {% if actor.description %}
-                                <p class="card-text">{{ actor.description }}</p>
+                                <p class="card-text content-p-profile" id="overflowTest">{{ actor.description }}</p>
                                 {% endif %}
                             </div>
                             <div class="card-body">
                                 {% if actor.website %}
-                                <a href="#" class="card-link">{{ actor.website }}</a>
+                                <a href="{{ actor.website }}" class="card-link" target="_blank"><i
+                                        class="fas fa-book-open"></i></a>
                                 {% endif %}
                             </div>
                         </div>

@@ -35,6 +35,14 @@ body {
   color: rgb(181, 189, 191, 1);
 }
 
+.content-p-profile {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(181, 189, 191, 1);
+}
+
 .content-h {
   font-family: "Rammetto One", cursive;
   font-size: 1.25rem;
@@ -45,6 +53,11 @@ body {
 .content-p-email a{
   color: rgb(181, 189, 191, 1);
   text-decoration: none;
+}
+
+.card {
+    background-color: rgb(0, 0, 0, 1) !important;
+    border: 1px solid rgba(0,0,0,.125);
 }
 
 /*---Images---*/
@@ -76,6 +89,13 @@ body {
 
 .header-logo-sm img {
   height: 150px;
+}
+
+/*---Icons/ Awesome---*/
+
+#overflowTest {
+  overflow-y: auto;
+  max-height: 15rem;
 }
 
 /*---Icons/ Awesome---*/
@@ -121,6 +141,11 @@ body {
 }
 
 .fa-video {
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
+}
+
+.fa-book-open{  
   color: rgb(128, 0, 0, 1);
   font-size: 2rem;
 }
