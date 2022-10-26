@@ -110,6 +110,11 @@ body {
   font-size: 2rem;
 }
 
+.fa-solid{
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
+  }
+
 .fa-book-open{  
   color: rgb(128, 0, 0, 1);
   font-size: 2rem;
