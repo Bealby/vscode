@@ -16,31 +16,23 @@
         </div>
 
         <!---Performance Info--->
-        <div class="text-box-inside pl-4 pt-4 pr-4 pb-3 mt-4 mb-4">
-            <div class="col-12">
-                <p class="content-h text-uppercase pb-0 mb-0 pb-2"><i class="fas fa-video"></i>&emsp;Profiles
-                </p>
-            </div>
-        </div>
         {% for tickets in tickets|dictsort:"position" %}
         <div class="col-12 col-md-6 col-lg-4 col-xl-4">
             <div class="card text-center mx-auto mb-4">
                 {% if ticket.image %}
-                <img class=" card-img-top img-fluid" src="{{ actor.image.url }}" alt="{{ actor.name }} Profile">
+                <img class=" card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.show }} Poster">
                 {% endif %}
                 <div class="card-body">
-                    {% if actor.name %}
-                    <P class="card-title content-h mb-3">{{ actor.name }}</P>
+                    {% if ticket.event %}
+                    <P class="card-title content-h mb-3">{{ ticket.event }}</P>
                     {% endif %}
-                    {% if actor.description %}
+                    {% if ticket.place %}
                     <p class="card-text content-p-profile" id="overflowTest">
-                        {{ actor.description|linebreaksbr }}</p>
+                        {{ ticket.place }}</p>
                     {% endif %}
-                </div>
-                <div class="card-body">
-                    {% if actor.website %}
-                    <a href="{{ actor.website }}" class="card-link" target="_blank"><i
-                            class="fas fa-globe-europe"></i></a>
+                    {% if ticket.location %}
+                    <p class="card-text content-p-profile" id="overflowTest">
+                        {{ ticket.location }}</p>
                     {% endif %}
                 </div>
             </div>
