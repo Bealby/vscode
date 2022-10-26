@@ -29,18 +29,20 @@
                 {% endif %}
                 <div class="card-body">
                     {% if ticket.name %}
-                    <P class="card-title content-p mb-3">{{ ticket.name }}</P>
+                    <P class="card-title content-p mb-0">{{ ticket.name }}</P>
                     {% endif %}
                     {% if ticket.event %}
-                    <P class="card-title content-p mb-3">{{ ticket.event }}</P>
+                    <P class="card-title content-p mb-0"><i class="fa-regular fa-calendar-days"></i>
+                        &emsp;{{ ticket.event }}
+                    </P>
                     {% endif %}
                     {% if ticket.place %}
-                    <p class="card-text content-p">
-                        {{ ticket.place }}</p>
+                    <p class="card-text content-p mb-0"><i class="fa-regular fa-building"></i>&emsp;{{ ticket.place }}
+                    </p>
                     {% endif %}
                     {% if ticket.location %}
-                    <p class="card-text content-p">
-                        {{ ticket.location }}</p>
+                    <p class="card-text content-p"><i class="fa-regular fa-location-pin"></i>&emsp;{{ ticket.location }}
+                    </p>
                     {% endif %}
                 </div>
             </div>
