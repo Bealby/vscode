@@ -8,7 +8,7 @@
 
         <!---Content 1--->
         <div class="col-12 col-md-8 offset-md-2">
-            <p class="page-main-header text-uppercase mt-4 mb-4">
+            <p class="page-main-header text-uppercase mt-4">
                 <i class="fa-solid fa-ticket"></i>&emsp;Tickets
             </p>
         </div>
@@ -22,7 +22,7 @@
 
         <!---Performance Info--->
         {% for ticket in tickets|dictsort:"position" %}
-        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 mt-4">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 mt-3 mb-4">
             <div class="card text-center mx-auto mb-4 card-ticket">
                 {% if ticket.image %}
                 <img class=" card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} Poster">
