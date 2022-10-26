@@ -12,11 +12,13 @@
                 <i class="fa-solid fa-ticket"></i>&emsp;Tickets
             </p>
         </div>
-        {% for c in current_shows %}
+        {% for show in shows %}
         <div class="col-12">
+            {% if show.name %}
             <p class="page-main-header text-uppercase mt-4">
-                {{ c.friendly_name }}
+                {{ show.name }}
             </p>
+            {% endif %}
         </div>
         {% endfor %}
 
