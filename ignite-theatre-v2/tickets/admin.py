@@ -14,6 +14,8 @@ class TicketAdmin(admin.ModelAdmin):
     list_display = (
         'show',
         'date',
+        'place',
+        'location',
     )
 
 
