@@ -13,11 +13,13 @@ class ShowAdmin(admin.ModelAdmin):
 class TicketAdmin(admin.ModelAdmin):
     list_display = (
         'show',
-        'date',
+        'event',
         'place',
         'location',
+        'position',
     )
 
+    ordering = ('position',)
 
 admin.site.register(Show, ShowAdmin)
 admin.site.register(Ticket, TicketAdmin)
