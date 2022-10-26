@@ -20,7 +20,34 @@
         </div>
         {% endfor %}
     </div>
+    <button onclick="topFunction()" id="my-scroll-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
 </section>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<!--Scroll to top feature-->
+<script>
+    function scrollFunction() {
+        var myScrollToTopBtn = document.getElementById("my-scroll-to-top-btn");
+        if (window.pageYOffset > 700) {
+            myScrollToTopBtn.style.display = "block";
+            myScrollToTopBtn.style.visibility = "visible";
+        } else {
+            myScrollToTopBtn.style.display = "none";
+            myScrollToTopBtn.style.visibility = "hidden";
+        }
+    }
+
+    window.onscroll = function () { scrollFunction() };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 {% endblock %}
