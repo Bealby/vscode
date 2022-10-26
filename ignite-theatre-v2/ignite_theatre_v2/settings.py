@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'about',
     'gallery',
     'cast',
-    'ticket',
+    'tickets',
 ]
 
 MIDDLEWARE = [
