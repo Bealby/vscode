@@ -16,6 +16,7 @@ class TicketAdmin(admin.ModelAdmin):
         'event',
         'place',
         'location',
+        'image',
         'position',
     )
 
