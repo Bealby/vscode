@@ -11,16 +11,10 @@
             <p class="page-main-header text-uppercase mt-4">
                 <i class="fa-solid fa-ticket"></i>&emsp;Tickets
             </p>
-        </div>
-        {% for show in shows %}
-        <div class="col-12">
-            {% if show.name %}
-            <p class="page-main-header text-uppercase mt-4">
-                {{ show.name }}
+            <p class="page-main-sub-header-tickets text-uppercase mt-4">
+                A Grandma's GRIMM
             </p>
-            {% endif %}
         </div>
-        {% endfor %}
 
         <!---Performance Info--->
         {% for ticket in tickets|dictsort:"position" %}
