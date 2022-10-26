@@ -599,3 +599,10 @@ nav ul li a:hover {
   width:18rem !important;
 }
 }
+
+/*---Reduce width of card for better viewing on galaxy fold---*/
+@media (max-width: 360px) {
+.card {
+    width:13rem !important;
+}
+}
