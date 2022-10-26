@@ -13,6 +13,13 @@
                     <i class="fa-solid fa-ticket"></i>&emsp;Tickets
                 </p>
             </div>
+            {% for c in current_shows %}
+            <div class="col-12">
+                <p class="page-main-header text-uppercase mt-4">
+                    {{ c.friendly_name }}
+                </p>
+            </div>
+            {% endfor %}
         </div>
 
         <!---Performance Info--->
