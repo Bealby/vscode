@@ -22,26 +22,28 @@
 
         <!---Performance Info--->
         {% for ticket in tickets|dictsort:"position" %}
-        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 mt-3 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-3 mb-4">
             <div class="card text-center mx-auto mb-4 card-ticket">
                 {% if ticket.image %}
                 <img class=" card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} Poster">
                 {% endif %}
                 <div class="card-body">
                     {% if ticket.name %}
-                    <P class="card-title content-p mb-0">{{ ticket.name }}</P>
+                    <P class="card-title content-h-ticket mb-2">{{ ticket.name }}</P>
                     {% endif %}
                     {% if ticket.event %}
-                    <P class="card-title content-p mb-0"><i class="fa-regular fa-calendar-days"></i>
-                        &emsp;{{ ticket.event }}
+                    <P class="card-title content-p-ticket mb-0"><i class="fa-regular fa-calendar-days">
+                        </i>&emsp;{{ ticket.event }}
                     </P>
                     {% endif %}
                     {% if ticket.place %}
-                    <p class="card-text content-p mb-0"><i class="fa-regular fa-building"></i>&emsp;{{ ticket.place }}
+                    <p class="card-text content-p-ticket mb-0"><i class="fa-regular fa-building">
+                        </i>&emsp;{{ ticket.place }}
                     </p>
                     {% endif %}
                     {% if ticket.location %}
-                    <p class="card-text content-p"><i class="fa-regular fa-location-pin"></i>&emsp;{{ ticket.location }}
+                    <p class="card-text content-p-ticket"><i class="fa-regular fa-location-pin">
+                        </i>&emsp;{{ ticket.location }}
                     </p>
                     {% endif %}
                 </div>
