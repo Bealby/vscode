@@ -8,12 +8,10 @@
 
         <!---Header--->
         {% for c in current_shows %}
-        <div class="text-box-inside">
-            <div class="col-12">
-                <p class="page-main-header text-uppercase mt-4">
-                    {{ c.friendly_name }}
-                </p>
-            </div>
+        <div class="col-12">
+            <p class="page-main-header text-uppercase mt-4">
+                {{ c.friendly_name }}
+            </p>
         </div>
         <div class="text-center mt-3">
             <img class="card-img-top img-fluid poster" src="{{ c.poster.url }}" alt="{{ c.friendly_name }} Poster">
