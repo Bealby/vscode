@@ -19,7 +19,7 @@ class Show(models.Model):
 class Ticket(models.Model):
 
     show = models.ForeignKey('show', null=True, blank=True, on_delete=models.SET_NULL)
-    date = models.DateField()
+    date = models.CharField(max_length=254)
     place = models.CharField(max_length=254)
     Location = models.CharField(max_length=254)
 

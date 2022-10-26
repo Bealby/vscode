@@ -17,6 +17,5 @@ class TicketAdmin(admin.ModelAdmin):
     )
 
 
-
 admin.site.register(Show, ShowAdmin)
-admin.site.register(Ticket), TicketAdmin)
+admin.site.register(Ticket, TicketAdmin)
