@@ -9,6 +9,7 @@ class ShowAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
+        'poster',
     )
 
 class ActorAdmin(admin.ModelAdmin):
