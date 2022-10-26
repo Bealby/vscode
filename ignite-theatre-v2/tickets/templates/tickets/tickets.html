@@ -6,21 +6,28 @@
 <section class="container-fluid" id="container-fluid-padding">
     <div class="row text-box-outside">
 
-        <!---Content 1--->
+        <!---Header--->
         <div class="text-box-inside">
             <div class="col-12 col-md-8 offset-md-2">
                 <p class="page-main-header text-uppercase mt-4 mb-4">
                     <i class="fa-solid fa-ticket"></i>&emsp;Tickets
                 </p>
             </div>
+            {% for ticket in tickets %}
+            <div>
+                <p class="page-main-header text-uppercase mt-4 mb-2">
+                    {{ ticket.name }}
+                </p>
+            </div>
+            {% endfor %}
         </div>
 
         <!---Performance Info--->
-        {% for tickets in tickets|dictsort:"position" %}
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card text-center mx-auto mb-4">
+        {% for ticket in tickets|dictsort:"position" %}
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center mx-auto mb-4 card-ticket">
                 {% if ticket.image %}
-                <img class=" card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.show }} Poster">
+                <img class=" card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} Poster">
                 {% endif %}
                 <div class="card-body">
                     {% if ticket.event %}

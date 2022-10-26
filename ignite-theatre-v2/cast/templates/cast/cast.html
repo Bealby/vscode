@@ -7,8 +7,8 @@
     <div class="row text-box-outside">
 
         <!---Header--->
+        {% for c in current_shows %}
         <div class="text-box-inside">
-            {% for c in current_shows %}
             <div class="col-12">
                 <p class="page-main-header text-uppercase mt-4">
                     {{ c.friendly_name }}

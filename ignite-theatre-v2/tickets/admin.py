@@ -13,6 +13,7 @@ class ShowAdmin(admin.ModelAdmin):
 class TicketAdmin(admin.ModelAdmin):
     list_display = (
         'show',
+        'name',
         'event',
         'place',
         'location',

@@ -61,6 +61,12 @@ body {
     width: 19rem !important;
 }
 
+.card-ticket {
+    background-color: rgb(0, 0, 0, 1) !important;
+    border: 1px solid rgba(0,0,0,.125) !important;
+    width: 13rem !important;
+}
+
 /*---Images---*/
 
 .ticket-source{
@@ -93,7 +99,11 @@ body {
 }
 
 .poster{
-  width: 300px;
+  width: 300px !important;
+}
+
+.poster-ticket{
+  width: 200px !important;
 }
 
 /*---Overflow---*/

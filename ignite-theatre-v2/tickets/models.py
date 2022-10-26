@@ -19,6 +19,7 @@ class Show(models.Model):
 class Ticket(models.Model):
 
     show = models.ForeignKey('show', null=True, blank=True, on_delete=models.SET_NULL)
+    name = models.CharField(max_length=254)
     event = models.CharField(max_length=254)
     place = models.CharField(max_length=254)
     location = models.CharField(max_length=254)
@@ -26,4 +27,4 @@ class Ticket(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        return self.event
+        return self.name
