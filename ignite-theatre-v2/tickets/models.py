@@ -20,7 +20,9 @@ class Ticket(models.Model):
 
     show = models.ForeignKey('show', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
-    event = models.CharField(max_length=254)
+    event_date = models.CharField(max_length=254)
+    description = models.TextField(null=True, blank=True)
+    event_details = models.TextField(null=True, blank=True)
     place = models.CharField(max_length=254)
     location = models.CharField(max_length=254)
     position = models.CharField(max_length=254)

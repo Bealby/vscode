@@ -14,11 +14,13 @@ class TicketAdmin(admin.ModelAdmin):
     list_display = (
         'show',
         'name',
-        'event',
+        'event_date',
         'place',
         'location',
         'image',
         'position',
+        'description',
+        'event_details',
     )
 
     ordering = ('position',)

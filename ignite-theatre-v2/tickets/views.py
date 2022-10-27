@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Show
 from .models import Ticket
 
@@ -28,4 +28,15 @@ def all_tickets(request):
 
     return render(request, 'tickets/tickets.html', context)
 
-    
+
+def ticket_detail(request, ticket_id):
+    """ A view to show individual tickets details """
+
+    ticket = get_object_or_404(Ticket, pk=ticket_id)
+
+    context = {
+        'ticket': ticket,
+    }
+
+    return render(request, 'tickets/ticket_detail.html', context)
+
