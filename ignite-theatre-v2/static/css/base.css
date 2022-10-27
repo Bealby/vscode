@@ -27,14 +27,6 @@ body {
   color: rgb(181, 189, 191, 1);
 }
 
-.page-main-sub-header-tickets {
-  font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 900;
-  text-align: left;
-  color: rgb(181, 189, 191, 1);
-}
-
 .content-p {
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
@@ -138,6 +130,10 @@ body {
 
 .poster-ticket{
   width: 200px !important;
+}
+
+.poster-ticket-details{
+  width: 220px !important;
 }
 
 /*---Overflow---*/

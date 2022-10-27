@@ -11,18 +11,10 @@
             <p class="page-main-header text-uppercase mt-4">
                 <i class="fa-solid fa-ticket"></i>&emsp;Tickets
             </p>
-            <p class="page-main-sub-header-tickets text-uppercase mt-4">
+            <p class="content-h text-uppercase mt-4">
                 A Grandma's GRIMM
             </p>
         </div>
-
-        <div class="col-6">
-        </div>
-
-        <div class="col-6">
-
-        </div>
-
 
         <!---Performance Info--->
         {% for ticket in tickets|dictsort:"position" %}
@@ -31,8 +23,8 @@
                 {% if ticket.image %}
                 <a href="{% url 'ticket_detail' ticket.id %}">
                     <img class="card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} Poster">
-                    {% endif %}
                 </a>
+                {% endif %}
                 <div class="card-body">
                     {% if ticket.name %}
                     <P class="card-title content-h-ticket mb-2">{{ ticket.name }}</P>

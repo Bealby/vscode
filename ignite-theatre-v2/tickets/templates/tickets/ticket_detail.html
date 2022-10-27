@@ -3,16 +3,44 @@
 
 {% block content %}
 
-<section class="container-fluid" id="container-fluid-padding">
+<section class="container" id="container-fluid-padding">
     <div class="row text-box-outside">
 
         <!---Content 1--->
         <div class="col-12 center">
-            <p class="page-main-header text-uppercase mt-4">
+            <p class="page-main-header text-uppercase mt-4 mb-5">
                 <i class="fa-solid fa-ticket"></i>&emsp;Ticket Details
             </p>
-            <p class="page-main-sub-header-tickets text-uppercase mt-4">
+        </div>
+        <div class="col-6">
+            <p class="content-h text-uppercase">
                 A Grandma's GRIMM
+            </p>
+            <p class="content-p-profile">
+                {{ ticket.description|linebreaksbr }}
+            </p>
+            <p class="content-h text-uppercase">
+                Event Details
+            </p>
+            <p class="content-p-profile">
+                {{ ticket.event_details|linebreaksbr }}
+            </p>
+        </div>
+        <div class="col-3 poster-ticket-details">
+            <img class="card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} poster">
+        </div>
+        <div class="col-3">
+            <p class="content-p text-uppercase">
+                <strong>Price</strong>
+            </p>
+            <p class="content-p-profile">
+                {{ ticket.price_details|linebreaksbr }}
+            </p>
+            <p class="content-p text-uppercase">
+                <strong>Other Dates</strong>
+            </p>
+            <p class="content-p-profile">
+                {{ ticket.event_details|linebreaksbr }}
             </p>
         </div>
 

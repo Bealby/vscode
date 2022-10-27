@@ -27,6 +27,7 @@ class Ticket(models.Model):
     location = models.CharField(max_length=254)
     position = models.CharField(max_length=254)
     image = models.ImageField(null=True, blank=True)
+    price_details = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name
