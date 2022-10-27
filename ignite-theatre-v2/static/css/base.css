@@ -92,11 +92,12 @@ body {
 
 .card {
     width: 19rem !important;
+    background-color:rgb(0, 0, 0, 1) !important;
 }
 
 .card-ticket {
     background-color:rgb(0, 0, 0, 1) !important;
-    width: 14rem !important;
+    width: 18rem !important;
     border: 0px !important;
 }
 
@@ -686,16 +687,16 @@ nav ul li a:hover {
 }
 
 /*---Increase width for display 4 col for better viewing on smaller devices ---*/
-@media (max-width: 1199px) {
+@media (max-width: 1360px) {
 .card-ticket {
-    width: 13rem !important;
+    width: 15rem !important;
 }
 }
 
 /*---Reduce width for display 3 col for better viewing on ipad ---*/
-@media (max-width: 767px) {
+@media (max-width: 880px) {
 .card-ticket {
-    width: 14rem !important;
+    width: 13rem !important;
 }
 }
 
