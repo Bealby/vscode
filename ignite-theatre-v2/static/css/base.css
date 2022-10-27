@@ -154,10 +154,10 @@ body {
   font-size: 2rem;
 }
 
-.fa-solid{
+.fa-ticket{
   color: rgb(128, 0, 0, 1);
   font-size: 2rem;
-  }
+}
 
 .fa-book-open{  
   color: rgb(128, 0, 0, 1);
@@ -222,6 +222,11 @@ body {
 .fa-regular{
   color: rgb(181, 189, 191, 1);
   font-size: 1rem;
+}
+
+.fa-location-dot .fa-calendar-days .fa-building{
+  color: rgb(181, 189, 191, 1) !important;
+  font-size: 1rem !important;
 }
 
 /*---Hover---*/
