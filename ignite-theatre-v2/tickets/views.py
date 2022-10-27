@@ -33,9 +33,11 @@ def ticket_detail(request, ticket_id):
     """ A view to show individual tickets details """
 
     ticket = get_object_or_404(Ticket, pk=ticket_id)
+    tickets = Ticket.objects.all()
 
     context = {
         'ticket': ticket,
+        'tickets': tickets,
     }
 
     return render(request, 'tickets/ticket_detail.html', context)

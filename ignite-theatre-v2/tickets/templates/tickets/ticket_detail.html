@@ -16,6 +16,9 @@
             <p class="content-h text-uppercase">
                 A Grandma's GRIMM
             </p>
+            <p class="content-h text-uppercase">
+                {{ ticket.event_date }}
+            </p>
             <p class="content-p-profile">
                 {{ ticket.description|linebreaksbr }}
             </p>
@@ -39,9 +42,13 @@
             <p class="content-p text-uppercase">
                 <strong>Other Dates</strong>
             </p>
+            {% for ticket in tickets %}
+            {% if ticket.event_date %}
             <p class="content-p-profile">
-                {{ ticket.event_details|linebreaksbr }}
+                {{ ticket.event_date }}
             </p>
+            {% endif %}
+            {% endfor %}
         </div>
 
 </section>
