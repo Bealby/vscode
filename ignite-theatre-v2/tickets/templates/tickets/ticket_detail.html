@@ -32,9 +32,9 @@
             <div class="col-3 poster-ticket-details">
                 <img class="card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} poster">
                 <div class="m-0 p-0 book-now">
-                    <p class="card-text text-center text-uppercase p-2">
+                    <a class="card-text text-center text-uppercase p-2" href="{% url 'view_bag' %}">
                         Book Now
-                    </p>
+                    </a>
                 </div>
             </div>
             <div class="col-3">
