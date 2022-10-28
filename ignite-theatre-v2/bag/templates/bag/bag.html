@@ -13,9 +13,24 @@
         </div>
 
         <!---Performance Info--->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-3 mb-4">
+        <div class="col-12">
             {% if bag_items %}
-            <div class="table-responsive rounded"></div>
+            <div class="table-responsive rounded">
+                <table class="table content-p">
+                    <tr>
+                        <th scope="col">Ticket Info</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">date</th>
+                    </tr>
+                    {% for item in bag_items %}
+                    <tr>
+                        <td>{{ item.ticket.name }}</td>
+                        <td>{{ item.ticket.price }}</td>
+                        <td>{{ item.ticket.date}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
             {% else %}
             <p>Your bag is empty</p>
             {% endif %}
