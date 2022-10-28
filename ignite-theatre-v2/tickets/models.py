@@ -28,6 +28,7 @@ class Ticket(models.Model):
     position = models.CharField(max_length=254)
     image = models.ImageField(null=True, blank=True)
     price_details = models.TextField(null=True, blank=True)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
 
     def __str__(self):
         return self.name
