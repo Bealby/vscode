@@ -30,7 +30,7 @@ def all_tickets(request):
 
 
 def ticket_detail(request, ticket_id):
-    """ A view to show individual tickets details """
+    """ A view to show individual ticket details """
 
     ticket = get_object_or_404(Ticket, pk=ticket_id)
 
