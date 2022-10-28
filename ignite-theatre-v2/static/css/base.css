@@ -145,6 +145,11 @@ body {
 
 /*---Icons/ Awesome---*/
 
+.fa-shopping-bag{
+  color: rgb(128, 0, 0, 1);
+  font-size: 2rem;
+}
+
 .fa-ticket-alt {
   color: rgb(128, 0, 0, 1);
   font-size: 2rem;

@@ -23,6 +23,8 @@
                 <a href="{% url 'ticket_detail' ticket.id %}">
                     <img class="card-img-top img-fluid" src="{{ ticket.image.url }}" alt="{{ ticket.name }} Poster">
                 </a>
+                {% else %}
+                <img class="card-img-top img-fluid" src="{{ MEDAI_URL }}noimage.png" alt="{{ ticket.name }} Poster">
                 {% endif %}
                 <div class="card-body">
                     {% if ticket.name %}

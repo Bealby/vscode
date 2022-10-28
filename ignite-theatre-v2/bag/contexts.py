@@ -1,4 +1,3 @@
-from decimal import Decimal
 from django.conf import settings
 
 def bag_contents(request):
@@ -14,7 +13,7 @@ def bag_contents(request):
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
-        'grand_total': grand_total 
+        'grand_total': grand_total,
     }
 
     '''Make dictionary available to all templates across the enitire application'''
