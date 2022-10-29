@@ -29,7 +29,7 @@
                         <td>{{ item.ticket.name }}</td>
                         <td>{{ item.ticket.date}}</td>
                         <td>
-                            <form class="form update-form" method="POST" action="">
+                            <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
