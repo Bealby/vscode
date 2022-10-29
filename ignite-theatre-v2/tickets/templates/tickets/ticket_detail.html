@@ -64,20 +64,19 @@
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}" />
                 </div>
+            </form>
+            <div class="col-3">
+                <p class="content-p text-uppercase">
+                    <strong>Price</strong>
+                </p>
+                <p class="content-p-profile">
+                    {{ ticket.price_details|linebreaksbr }}
+                </p>
+                <p class="content-p text-uppercase">
+                    <strong>Other Dates</strong>
+                </p>
+            </div>
         </div>
-        </form>
-        <div class="col-3">
-            <p class="content-p text-uppercase">
-                <strong>Price</strong>
-            </p>
-            <p class="content-p-profile">
-                {{ ticket.price_details|linebreaksbr }}
-            </p>
-            <p class="content-p text-uppercase">
-                <strong>Other Dates</strong>
-            </p>
-        </div>
-    </div>
     </div>
 </section>
 {% endblock %}
