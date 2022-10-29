@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block content %}
 
@@ -19,15 +20,16 @@
                 <table class="table content-p">
                     <tr>
                         <th scope="col">Ticket Info</th>
-                        <th scope="col">date</th>
-                        <th scope="col">Quantity</th>
+                        <th scope="col">Date</th>
                         <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
                         <th scope="col">Sub Total</th>
                     </tr>
                     {% for item in bag_items %}
                     <tr>
                         <td>{{ item.ticket.name }}</td>
                         <td>{{ item.ticket.date}}</td>
+                        <td>{{ item.ticket.price }}</td>
                         <td>
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
@@ -59,8 +61,7 @@
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
                                 data-product_size="{{ item.size }}"><small>Remove</small></a>
                         </td>
-                        <td>{{ item.ticket.price }}</td>
-                        <td>{{ item.ticket.price }}</td>
+                        <td>${{ item.ticket.price|calc_subtotal:item.quantity }}</td>
                     </tr>
                     {% endfor %}
                     <tr>
@@ -99,6 +100,17 @@
             location.reload();
         });
     });
+
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}/`;
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
 </script>
 
 {% endblock %}
