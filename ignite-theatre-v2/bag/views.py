@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404                     
+from tickets.models import Ticket
+
 
 def view_bag(request):
 # A view to return bag contents page
