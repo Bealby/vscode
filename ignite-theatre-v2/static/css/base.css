@@ -145,6 +145,11 @@ body {
 
 /*---Icons/ Awesome---*/
 
+.fa-solid, .fas {
+    font-weight: 900;
+    color: rgb(181, 189, 191, 1);
+}
+
 .fa-shopping-bag{
   color: rgb(128, 0, 0, 1);
   font-size: 2rem;
@@ -228,6 +233,12 @@ body {
 .fa-location-dot .fa-calendar-days .fa-building{
   color: rgb(181, 189, 191, 1) !important;
   font-size: 1rem !important;
+}
+
+/*---Buttons/ Input---*/
+
+.button-add-to-bag{
+  color: rgb(128, 0, 0, 1) !important;
 }
 
 /*---Hover---*/

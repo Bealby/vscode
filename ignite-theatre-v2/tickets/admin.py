@@ -24,6 +24,7 @@ class TicketAdmin(admin.ModelAdmin):
         'price_details',
         'date',
         'price',
+        
     )
 
     ordering = ('position',)
